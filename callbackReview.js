@@ -77,7 +77,15 @@ map(numbers, function(num){
 
 
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
-
+function uniq(namesArr, cb) {
+  var uniqArr = [];
+  namesArr.forEach(function(item, index) {
+    if (namesArr.indexOf(item) === index) {
+      uniqArr.push(item);
+    }
+  })
+  cb(uniqArr);
+}
 
 
 
