@@ -113,3 +113,13 @@ var myPoem = 'What is a jQuery but a misunderstood object?'
 
 var theOdyssey = "function expression or function declaration? Tis an obvious choice";
 //Write a function called vowelCounter that takes in a string (theOdyssey) and returns how many vowels are in that string.
+function vowelCounter(str) {
+  str = str.toLowerCase();
+  var counter = 0;
+  for (var i = 0; i < str.length; i++) {
+    if (str[i] === 'a' || str[i] === 'e' || str[i] === 'i' || str[i] === 'o' || str[i] === 'u') {
+      counter++;
+    }
+  }
+  return counter;
+}
