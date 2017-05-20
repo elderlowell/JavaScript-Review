@@ -37,6 +37,17 @@ var getRandomArbitrary = function() {
 var randomArray = [0,3,4,5,6,7,9,14,17,24,25,26,29,30];
 
   //code here
+  function checkArray(arr) {
+    var randomNum = getRandomArbitrary();
+    var checker = false;
+    for (var i = 0; i < arr.length; i++) {
+      if (arr[i] === randomNum) {
+        checker = true;
+        break;
+      }
+    }
+    alert(checker);
+  }
 
 
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
