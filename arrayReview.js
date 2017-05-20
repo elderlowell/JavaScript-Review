@@ -75,6 +75,16 @@ alert(second) //[1,2,3,4,5,6,7];
 var sentence = "Dev Mountain is the best"
 
   //code here
+  function longest(str) {
+    var strArr = str.split(' ');
+    var longestWord = '';
+    for (var i = 0; i < strArr.length; i++) {
+      if (strArr[i].length > longestWord.length) {
+        longestWord = strArr[i];
+      }
+    }
+    return longestWord;
+  }
 
 
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
