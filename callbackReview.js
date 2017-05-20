@@ -115,7 +115,14 @@ each(names, function(item, indice){
 
 
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
+function getUserById(userID, usersArr, cb) {
+  for (var i = 0; i < usersArr.length; i++) {
+    if (usersArr[i].id === userID) {
+      return cb(usersArr[i]);
+    }
+  }
 
+}
 
 
 
