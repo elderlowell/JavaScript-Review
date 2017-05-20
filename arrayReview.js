@@ -3,14 +3,16 @@ var threeItems = [1,2,3];
 //alert the result of your function
 
   //code here
-
+  function last(threeItems) {
+    alert(threeItems[threeItems.length-1]);
+  }
 
 
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
 
 
 
-//Loop through evenArray removing all values that aren't even 
+//Loop through evenArray removing all values that aren't even
 var evenArray = [1,2,3,6,22,98,45,23,22,12];
 
   //code here
@@ -58,7 +60,7 @@ var sentence = "Dev Mountain is the best"
 
 
 
-//write a function called capitalize that takes in the myPoem variable and capitalizes every word 
+//write a function called capitalize that takes in the myPoem variable and capitalizes every word
 var myPoem = 'What is a jQuery but a misunderstood object?'
 //What is a jQuery but a misunderstood object? --> What Is A JQuery But A Misunderstood Object?
 
