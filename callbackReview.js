@@ -98,13 +98,17 @@ uniq(names, function(uniqArr){
 
 
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
-
+function each(namesArr, cb) {
+  namesArr.forEach(function(item, index) {
+    return cb(item, index);
+  })
+}
 
 
 
 var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
 each(names, function(item, indice){
-  console.log('The item in the ' + indice + 'position is ' + item)
+  console.log('The item in the ' + indice + ' position is ' + item)
 });
 
 
