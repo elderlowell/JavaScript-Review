@@ -100,3 +100,21 @@ var user = {
 
 //write a function called voweler that accepts a string, and returns an object with the keys being all the vowels in that string, and the values being how many times that particular vowel was in the string.
 //voweler("This is a test") --> {i: 2, a: 1, e: 1};
+function voweler(str) {
+  str = str.toLowerCase();
+  var vowelArr = ['a', 'e', 'i', 'o', 'u'];
+  var vowelObj = {};
+  for (var i = 0; i < str.length; i++) {
+    for (var j = 0; j < vowelArr.length; j++) {
+      if (str[i] === vowelArr[j]) {
+        if (!vowelObj.hasOwnProperty(str[i])) {
+          vowelObj[str[i]] = 1;
+        }
+        else {
+          vowelObj[str[i]]++;
+        }
+      }
+    }
+  }
+  return vowelObj;
+}
