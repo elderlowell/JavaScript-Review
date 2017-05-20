@@ -57,7 +57,13 @@ contains('Colt', names, function(yes){
 
 
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
-
+function map(numArray, cb) {
+  var newArr = [];
+  numArray.forEach(function(num) {
+    newArr.push(cb(num));
+  });
+  return newArr;
+}
 
 
 
@@ -129,7 +135,6 @@ getUserById('16t', users, function(user){
 
 
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
-
 
 
 
